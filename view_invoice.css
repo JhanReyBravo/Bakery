@@ -1,0 +1,70 @@
+/* Reset default margin and padding */
+body,
+h2,
+p,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Invoice details styles */
+h2 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+/* Invoice items table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #dddddd;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Back link style */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

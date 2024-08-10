@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  width: 90%; /* Make the table smaller */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin: 0 auto; /* Center the table */
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #0056b3;
+  margin-right: 15px; /* Add space between visited links */
+}
+
+.delete {
+  color: red;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.view,
+button.edit,
+button.delete {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+button.view {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+button.edit {
+  background-color: #ffc107; /* Yellow */
+  color: black;
+}
+
+button.delete {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+button.view:hover {
+  background-color: #218838;
+}
+
+button.edit:hover {
+  background-color: #e0a800;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}

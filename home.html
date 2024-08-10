@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <header>
+        <img src="Alogo.png" alt="Website Logo" class="logo">
+        <h1>THE A BAKERY BCD</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Customer</a>
+                <div class="dropdown-content">
+                    <a href="addcustomer.html" class="drop">Add Customer</a>
+                    <a href="customerlist.php" class="drop">Cusomer List</a>
+                    
+                </div> 
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Receiving</a>
+                    <div class="dropdown-content">
+                        <a href="receiving.php" class="drop">Add Receiving</a>
+                        <a href="rawmat_list.php" class="drop">Rawmat List</a>
+                    </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Production</a>
+                <div class="dropdown-content">
+                    <a href="production.php" class="drop">Add Production</a>
+                    <a href="product_list.php" class="drop">Product List</a>
+
+                </div>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Invoicing</a>
+                <div class="dropdown-content">
+                    <a href="create_invoice.php" class="drop">Create Invoice</a>
+                    <a href="invoice_list.php" class="drop">Invoice List</a>
+                </div>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Payment</a>
+                    <div class="dropdown-content">
+                        <a href="apppayment.php" class="drop">Apply Payment</a>
+                        <a href="payment_list.php" class="drop">Payment List</a>
+                    </div>
+                </div>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Expenses</a>
+                    <div class="dropdown-content">
+                        <a href="expenses.php" class="drop">Add Expenses</a>
+                        <a href="expenses_list.php" class="drop">Expenses List</a>
+                    </div>
+                </div>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Payroll</a>
+                    <div class="dropdown-content">
+                        <a href="process_payroll.php" class="drop">Add Payroll & Cash Advances</a>
+                        <a href="view_payroll.php" class="drop">Payroll & CA List</a>
+                    </div>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">EndOfDay</a>
+                    <div class="dropdown-content">
+                        <a href="end_of_day_reports.php" class="drop">Generate Report</a>
+                        <a href="end_of_day_report_list.php" class="drop">Report List</a>
+                    </div>
+                    
+        </li>
+            <li><a href="Logout.php">Logout</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <?php 
+        session_start();
+        if (isset($_SESSION['username'])) {
+            echo htmlspecialchars($_SESSION['username']); 
+        } else {
+            header("Location: login.html");
+            exit();
+        }
+        ?>.
+    </main>
+</body>
+</html>

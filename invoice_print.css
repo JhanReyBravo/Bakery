@@ -1,0 +1,110 @@
+/* receipt.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+  margin-right: 80%;
+}
+
+.invoice-info {
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.left-side,
+.right-side {
+  width: 30%;
+}
+
+.right-side {
+  text-align: center;
+}
+
+.invoice-table {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.invoice-table table {
+  width: 45%;
+  border-collapse: collapse;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #f4f4f4;
+}
+
+.print-button {
+  margin: 20px;
+  text-align: center;
+}
+
+.print-button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.invoice-id {
+  color: red;
+}
+.footer {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 14px;
+  margin-left: 190px;
+}
+
+/* Styles for the invoice-info section */
+.invoice-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+}
+
+/* Align customer details and invoice date */
+.left-side {
+  margin-right: 20px;
+}
+
+.right-side {
+  text-align: right; /* Aligns text to the right */
+}
+
+/* Styles for the invoice ID */
+.invoice-id {
+  color: red;
+}
+@media print {
+  .print-button,
+  .home {
+    display: none;
+  }
+}
